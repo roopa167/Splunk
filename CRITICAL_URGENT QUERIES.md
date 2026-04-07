@@ -45,7 +45,7 @@ index=main sourcetype=syslog (crash OR "Core" OR "Segmentation fault") | table _
 
 ---
 
-## 📊 SYSTEM HEALTH
+##  SYSTEM HEALTH
 
 ### 6. Top 10 Hosts with Most Errors
 ```spl
@@ -87,7 +87,7 @@ index=main sourcetype=syslog memory_usage=* | timechart avg(memory_usage) by hos
 
 ---
 
-## 👤 USER & ACCESS
+##  USER & ACCESS
 
 ### 11. Who Logged In Last 24 Hours?
 ```spl
@@ -211,7 +211,7 @@ index=main sourcetype=syslog (LISTENING OR "listening on") | table host, service
 
 ---
 
-## 🌐 NETWORK
+##  NETWORK
 
 ### 26. Connection Refused Errors
 ```spl
@@ -269,7 +269,7 @@ index=main sourcetype=syslog ("port scan" OR "nmap" OR "syn flood") earliest=-24
 
 ---
 
-## 💾 STORAGE & FILES
+##  STORAGE & FILES
 
 ### 33. Disk I/O Errors
 ```spl
@@ -327,7 +327,7 @@ index=main sourcetype=syslog df | regex _raw="100%" | alert
 
 ---
 
-## 🛡️ SECURITY
+##  SECURITY
 
 ### 40. Privilege Escalation Attempts
 ```spl
@@ -458,16 +458,16 @@ index=main sourcetype=syslog (sudo denied OR "Failed password" OR "Invalid user"
 
 ## 📌 QUICK TIPS
 
-✅ Add `earliest=-24h` to make searches faster
-✅ Use `head 100` when testing queries
-✅ Add `| stats count by host` to group results
-✅ Use `| where count > X` to filter
-✅ Use `| sort - count` to sort by count descending
-✅ Use `| table field1, field2` to show specific fields
-✅ Use `| rename` to rename columns
-✅ Use `| eval` to create new fields
-✅ Use `| dedup` to remove duplicates
-✅ Use `| alert` to convert to alert
+ Add `earliest=-24h` to make searches faster
+ Use `head 100` when testing queries
+ Add `| stats count by host` to group results
+ Use `| where count > X` to filter
+ Use `| sort - count` to sort by count descending
+ Use `| table field1, field2` to show specific fields
+ Use `| rename` to rename columns
+ Use `| eval` to create new fields
+ Use `| dedup` to remove duplicates
+ Use `| alert` to convert to alert
 
 ---
 
