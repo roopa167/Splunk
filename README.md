@@ -101,7 +101,7 @@
 
 ---
 
-### File 3: `splunk_for_devops_english.md`
+### File 3: `splunk_for_Kubernetes.md`
 **Integration with Your DevOps Stack**
 
 **Contains:**
