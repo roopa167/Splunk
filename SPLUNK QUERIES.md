@@ -722,23 +722,23 @@ After saving as search:
 
 ## OPTIMIZATION TIPS FOR FAST SEARCHES
 
-✅ Always add `earliest=-24h` to limit data
-✅ Use specific `sourcetype` to narrow results
-✅ Filter at search level (not with pipes)
-✅ Add `head 100` when testing
-✅ Use `where` after `stats`, not before
-✅ Use `fields` to show only necessary columns
-✅ Use `dedup` at the end, not beginning
+Always add `earliest=-24h` to limit data
+Use specific `sourcetype` to narrow results
+Filter at search level (not with pipes)
+Add `head 100` when testing
+Use `where` after `stats`, not before
+Use `fields` to show only necessary columns
+Use `dedup` at the end, not beginning
 
 ---
 
 ## COMMON MISTAKES TO AVOID
 
-❌ Searching entire index without time limit
-❌ Using `| search` instead of field search
-❌ Running complex `regex` on large datasets
-❌ Using `where` before `stats`
-❌ Forgetting to add `alert` to critical queries
+1. Searching entire index without time limit
+2. Using `| search` instead of field search
+3. Running complex `regex` on large datasets
+4. Using `where` before `stats`
+5. Forgetting to add `alert` to critical queries
 
 ---
 
