@@ -3,7 +3,7 @@
 
 ---
 
-## 🔴 CRITICAL/URGENT QUERIES
+##  CRITICAL/URGENT QUERIES
 
 ### 1. Show All Errors Last 24 Hours
 ```spl
